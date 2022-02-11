@@ -1,0 +1,66 @@
+int water ; 
+double money,Unit;
+Scanner sc = new scanner(System.in);
+
+System.out.print("Enter your water unit : ");
+water = sc.nextInt();
+
+if(water <= 50){
+	Unit = 3.25;
+}else if(water <= 100){
+	Unit = 4.50;
+}else if(water > 100){
+	Unit = 5.25;
+}
+
+money = Unit * water ;
+System.out.print("total is " + money);
+
+/----------------------------------------------------------------------/
+int water ; 
+double money = 0.0,Unit;
+Scanner sc = new scanner(System.in);
+
+
+System.out.print("Enter your water unit : ");
+water = sc.nextInt();
+
+if(water <= 50){
+	Unit = 3.25;
+}else if(water <= 100 && water >= 51){
+	Unit = 4.5;
+	water -= 50;
+	money = Unit * water;
+	money = money + 162.5;
+	
+	
+}else if(water >= 101){
+	Unit = 5.25;
+	water -= 100;
+	money = Unit * water;
+	money = money + 162.5 + 225;
+}
+
+System.out.print("total is " + money);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

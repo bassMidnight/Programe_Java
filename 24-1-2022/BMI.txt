@@ -1,0 +1,23 @@
+string message;
+double H,W,BMI;
+Scanner sc = new scanner(System.in);
+system.out,print("Enter HEIGHT (cm.) : ");
+H = sc.nextDouble()
+system.out,print("Enter WEIGHT (kg.) : ");
+W = sc.nextDouble()
+
+H = H/100.0;
+Math.pow(a, b);
+BMI = W/Math.pow(H, 2);
+
+if(BMI > 30){
+	message = "อ้วนแบบอันตรายแล้ว";
+}else if(BMI >= 25){
+	message = "อวบระยะสุดท้าย";
+}else if(BMI >= 17){
+	message = "เริ่มจะอวบ";
+}else{
+	message = "ผอม";
+}
+
+System.out.println("BMI : " + message);

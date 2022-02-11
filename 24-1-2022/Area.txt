@@ -1,0 +1,29 @@
+double Pi = 3.14 , R , W , H;
+string = message;
+Scanner sc = new scanner(System.in);
+System.out.println("circle Width = -1 : Hieght = -1");
+System.out.println("ratangle Radius = -1");
+
+System.out.print("Radius : ");
+R = sc.nextDouble();
+
+System.out.print("Width : ");
+W = sc.nextDouble();
+
+System.out.print("Hieght : ");
+H = sc.nextDouble();
+
+
+if(R == -1){
+	//4เหลี่ยม
+	Area = W*H;
+	message = "Circle";
+}else if(W == -1 && H == -1){
+	//Circle
+	Area = Pi * Math.pow(R,2) ;
+	message = "Rectangle";
+}
+
+System.out.print("Area " + message + " : " + Area );
+
+

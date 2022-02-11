@@ -1,0 +1,22 @@
+int salary , year ;
+double total , grow_rate;
+Scanner sc = new scanner(System.in);
+
+System.out.print("Salary : ");
+salary = sc.nextInt();
+
+System.out.print("Year : ");
+Year = sc.nextInt();
+
+if(year >= 11){
+	grow_rate = 0.11;
+}else if(year >= 6){
+	grow_rate = 0.09;
+}else if(year >= 0){
+	grow_rate = 0.05;
+}
+
+total = salary * grow_rate ;
+System.out.print("total : " + total);
+
+/-------------------------------------------------------------/
